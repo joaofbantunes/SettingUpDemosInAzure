@@ -295,5 +295,15 @@
                 }
             }
         }
-    ]
+    ],
+    "outputs": {
+        "appPublishProfile": {
+            "type": "object",
+            "value": "[list(concat('Microsoft.Web/sites/', variables('appName') ,'/config/publishingcredentials'), '2016-08-01')]"
+        },
+        "appName": {
+            "type": "string",
+            "value": "[variables('appName')]"
+        }
+    }
 }
