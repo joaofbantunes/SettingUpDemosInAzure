@@ -5,7 +5,7 @@ env:
   RESOURCE_GROUP_NAME: 'SettingUpDemosInAzure'
 
 jobs:
-  build-and-deploy:
+  bring-it-all-down:
     runs-on: ubuntu-latest
     steps:
     - name: Login to Azure
